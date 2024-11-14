@@ -64,9 +64,8 @@ spec:
 ```
 
 ### 创建metallb出现的问题
-```yaml
 Failed calling webhook, failing closed ipaddresspoolvalidationwebhook.metallb.io: failed calling webhook "ipaddresspoolvalidationwebhook.metallb.io": failed to call webhook: Post "https://metallb-webhook-service.metallb-system.svc:443/validate-metallb-io-v1beta1-ipaddresspool?timeout=10s": context deadline exceeded
-```
+
 ```bash
 kubectl delete validatingwebhookconfigurations.admissionregistration.k8s.io metallb-webhook-configuration
 ```
